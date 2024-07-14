@@ -29,14 +29,14 @@ namespace ProductosCRUD.Server.Controllers
             producto.ponderacionActividad = producto.conocimientoActividad + producto.relacionamientoActividad + producto.condicionTrabajoActividad + producto.impactoActividad + producto.responsabilidadActividad;
 
             //><
-            if (Decimal.Compare(producto.ponderacionActividad, producto.ponderacionActividad) >= 6 && producto.ponderacionActividad <= 8.20)
+            /*if (Decimal.Compare(producto.ponderacionActividad, producto.ponderacionActividad) >= 6 && producto.ponderacionActividad <= 8.20)
             {
 
             }
             else if(producto.ponderacionActividad >= 6 && producto.ponderacionActividad <= 8,2)
             {
                  
-            }
+            }*/
 
             await _context.Productos.AddAsync(producto);
             await _context.SaveChangesAsync();
