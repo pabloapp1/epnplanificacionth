@@ -1,0 +1,91 @@
+﻿@model ProductosCRUD.Client.Models.Producto
+
+
+<div class=" card text-primary">
+    <div class=" card-header text-center ">
+        <h5>Actividad</h5>
+    </div>   
+    <div class=" card-body ">
+        <dl class="row">
+            <dt class="col-sm-2 text-dark col text-start">
+                @Html.DisplayNameFor(model => model.nombreActividad)
+            </dt>
+           
+
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.nombreActividad)
+            </dd>
+
+            <div class="form-group">
+                _
+            </div>
+            
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.conocimientoActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.conocimientoActividad)
+            </dd>
+          
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.relacionamientoActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.relacionamientoActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.condicionTrabajoActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.condicionTrabajoActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.impactoActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.impactoActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.responsabilidadActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.responsabilidadActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.ponderacionActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ponderacionActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.ponderacionNivelActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ponderacionNivelActividad)
+            </dd>
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.grupoOcupacionalActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.grupoOcupacionalActividad)
+            </dd>
+
+            <div class="form-group">
+                _
+            </div>
+
+            <dt class="col-sm-2 text-dark">
+                @Html.DisplayNameFor(model => model.observacionActividad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.observacionActividad)
+            </dd>
+            
+        </dl>
+    </div>
+    <div class=" card-footer text-center">
+        <a asp-action="Edit" asp-route-id="@Model.idActividad" class="btn btn-warning btn-sm text-black">Editar</a>
+        <a asp-action="Index" class="btn btn-success btn-sm text-black">volver a la lista</a>
+    </div>   
+</div>
+

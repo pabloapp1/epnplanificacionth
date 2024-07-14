@@ -1,0 +1,195 @@
+﻿@model ProductosCRUD.Client.Models.Producto
+
+<div class=" card text-primary" style="max-width: 30rem;">
+    <div class="card-header text-center">
+        <h5>Editar Actividad</h5>
+    </div>
+    <div class=" card-body text-primary">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="idActividad" />
+
+                    <div class="form-group">
+                        <label asp-for="nombreActividad" class="control-label"></label>
+                        <input asp-for="nombreActividad" class="form-control text-black" placeholder="Nombre">
+                        <span asp-validation-for="nombreActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="conocimientoActividad" class="control-label"></label>
+                        <select asp-for="conocimientoActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Conocimiento</option>
+                            <option value="1,80" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="* Actividades primarias de apoyo, manejo de documentos, correspondencia o atención al público que requiere de conocimientos elementales.">
+                                Nivel 1: 1,80
+                            </option>
+                            <option value="3,60" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="* Conocimientos básicos con limitado razonamiento y aporte.">
+                                Nivel 2: 3,60
+                            </option>
+                            <option value="5,40" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="* Actividades específicas de análisis, interpretación, ejecución de herramientas y procedimientos técnico - administrativos">
+                                Nivel 3: 5,40
+                            </option>
+                            <option value="7,20" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="* Conocimiento de procedimientos y sistemas de trabajo que podrá incluir destreza o manipulación de un equipamiento especializado.">
+                                Nivel 4: 7,20
+                            </option>
+                            <option value="9,00" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="* Diseño, innovación e implementación de nuevos procedimientos, acciones relevantes de alto desempeño técnico - cientifico que requiere de conocimientos especializados - avanzados.">
+                                Nivel 5: 9,00
+                            </option>
+                        </select>
+                        <span asp-validation-for="conocimientoActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="relacionamientoActividad" class="control-label"></label>
+                        <select asp-for="relacionamientoActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Relacionamiento</option>
+                            <option value="1,20">Nivel 1: 1,20</option>
+                            <option value="2,40">Nivel 2: 2,40</option>
+                            <option value="3,60">Nivel 3: 3,60</option>
+                            <option value="4,80">Nivel 4: 4,80</option>
+                            <option value="6,00">Nivel 5: 6,00</option>
+                        </select>
+                        <span asp-validation-for="relacionamientoActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="condicionTrabajoActividad" class="control-label"></label>
+                        <select asp-for="condicionTrabajoActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Condicion Trabajo</option>
+                            <option value="0,60">Nivel 1: 0,60</option>
+                            <option value="1,20">Nivel 2: 1,20</option>
+                            <option value="1,80">Nivel 3: 1,80</option>
+                            <option value="2,40">Nivel 4: 2,40</option>
+                            <option value="3,00">Nivel 5: 3,00</option>
+                        </select>
+                        <span asp-validation-for="condicionTrabajoActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label asp-for="impactoActividad" class="control-label"></label>
+                        <select asp-for="impactoActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Impacto</option>
+                            <option value="0,60">Nivel 1: 0,60</option>
+                            <option value="1,20">Nivel 2: 1,20</option>
+                            <option value="1,80">Nivel 3: 1,80</option>
+                            <option value="2,40">Nivel 4: 2,40</option>
+                            <option value="3,00">Nivel 5: 3,00</option>
+                        </select>
+                        <span asp-validation-for="impactoActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="responsabilidadActividad" class="control-label"></label>
+                        <select asp-for="responsabilidadActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Responsabilidad</option>
+                            <option value="1,80">Nivel 1: 1,80</option>
+                            <option value="3,60">Nivel 2: 3,60</option>
+                            <option value="5,40">Nivel 3: 5,40</option>
+                            <option value="7,20">Nivel 4: 7,20</option>
+                            <option value="9,00">Nivel 5: 9,00</option>
+                        </select>
+                        <span asp-validation-for="responsabilidadActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ponderacionActividad" class="control-label"></label>
+                        <input asp-for="ponderacionActividad" class="form-control text-black" placeholder="Ponderacion">
+                        <span asp-validation-for="ponderacionActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="ponderacionNivelActividad" class="control-label"></label>
+                        <select asp-for="ponderacionNivelActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Nivel Actividad</option>
+                            <option value="OP">OP - Operativo</option>
+                            <option value="TC">TC - Tecnico</option>
+                            <option value="ES">ES - Estrategico</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="grupoOcupacionalActividad" class="control-label"></label>
+                        <select asp-for="grupoOcupacionalActividad" class="btn btn-outline-primary btn-sm text-start text-black">
+                            <option selected>Escojer - Grupo Ocupacional</option>
+                            <option value="SPA1">Operativo - SPA1</option>
+                            <option value="SPA2">Operativo - SPA2</option>
+                            <option value="SPA3">Operativo - SPA3</option>
+                            <option value="SPA4">Operativo - SPA4</option>
+                            <option value="SP1">Operativo - SP1</option>
+                            <option value="SP2">Tecnico - SP2</option>
+                            <option value="SP3">Tecnico - SP3</option>
+                            <option value="SP4">Tecnico - SP4</option>
+                            <option value="SP5">Tecnico - SP5</option>
+                            <option value="SP6">Estrategico - SP6</option>
+                            <option value="SP7">Estrategico - SP7</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        _
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="observacionActividad" class="control-label"></label>
+                        <input asp-for="observacionActividad" class="form-control text-black" placeholder="Observacion">
+                        <span asp-validation-for="observacionActividad" class="text-danger"></span>
+                    </div>
+
+                    <div class=" card-footer text-center">
+                        <div class="form-group">
+                            <input type="submit" value="Guardar" class="btn btn-primary btn-sm text-black" />
+                            <a asp-action="Index" class="btn btn-success btn-sm">Volver a la lista</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+
+
+
+
